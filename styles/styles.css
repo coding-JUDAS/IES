@@ -1,0 +1,189 @@
+html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: #000;
+    color: antiquewhite;
+    padding: 2rem;
+  }
+  h1,h2 {
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  .nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  
+  .nav-list a:hover {
+    background: #ffffff;
+    color: #000;
+  }
+  .introduction-section {
+    margin-top: 2rem;
+    padding: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  .introduction-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #000;
+    justify-content: center;
+  }
+  .services-section {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #000;
+  }
+  
+  .services-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #ffffff;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  @media (max-width: 30.625em) {
+    .services-section {
+      padding: 6rem 1rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 2fr;
+    }
+  }
+  
+  .services {
+    background: #000;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  .intro-paragraph{
+    box-shadow: 2px 2px 2px rgb(192, 190, 190);
+    background: rgb(11, 11, 12);
+    padding: 2rem;
+    height: 100vh;
+  }
+  form{
+    display:block;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50vw;
+    
+  }
+  .contact-us{
+    display: block;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
