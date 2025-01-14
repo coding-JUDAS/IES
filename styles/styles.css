@@ -97,7 +97,6 @@ img {
 
     .nav-list{
       position:absolute;
-      padding: 0.2rem;
       top: 70px;
       left: 0;
       right: 0;
@@ -118,13 +117,19 @@ img {
       display: block;
     }
     .introduction-section{
+      block-size: auto;
       font-size: 0.8rem;
       height: fit-content;
       width: fit-content;
+      margin-bottom: 0.8rem;
+    }
+    .intro-paragraph{
+      height:fit-content;
+      width: fit-content;
     }
     .services-section {
-      margin-top: 2rem;
-      padding: 2rem 1rem;
+      margin-top: 0.8rem;
+      padding: 0.8rem;
     }
   
     .services-grid {
@@ -138,7 +143,6 @@ img {
   .introduction-section {
     margin-top: 2rem;
     padding: 2rem;
-    padding-right: 2rem;
     display: flex;
     height: fit-content;
     width: fit-content;
@@ -148,13 +152,6 @@ img {
     background-color: #000;
   }
   
-  .introduction-section > p {
-    font-size: 3rem;
-    font-weight: 200;
-    font-style: italic;
-    color: #000;
-    justify-content: center;
-  }
   .services-section {
     margin-top: 2rem;
     text-align: center;
@@ -164,7 +161,7 @@ img {
   
   .services-section-header {
     max-width: 640px;
-    margin: 0 auto 6rem auto;
+    margin: 0 auto 2rem auto;
     border-bottom: 0.2rem solid #ffffff;
   }
   .services-grid {
@@ -187,7 +184,7 @@ img {
     box-shadow: 2px 2px 2px rgb(192, 190, 190);
     background: rgb(11, 11, 12);
     padding: 2rem;
-    height: 100vh;
+    height: fit-content;
   }
   form{
     display:block;
