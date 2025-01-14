@@ -6,11 +6,15 @@
         <title>Intsikayethu Engineering Solutions</title>
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
     <body>
         <!----Start navigation-->
-        <nav id="navbar" class="navbar">
-            <ul class="nav-list">
+        <nav id="navbar" class="navbar" >
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <ul class="nav-list" id="nav-list">
                 <li><a href="#services-section">Electrical</a><ul>
                     <li></li>
                     <li></li>
@@ -22,6 +26,9 @@
                 <li><a href="#services-section">Vision</a></li>
                 <li><a href="#services-section">About</a></li>
             </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
         </nav>
         <!----End Navigation-->
         <!----Start Introduction-->
@@ -117,6 +124,20 @@
         <!----End contact section-->
         </footer>
         <!----End Footer section-->
+        <script>
+            let menuList = document.getElementById("nav-list");
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu(){
+                if(menuList.style.maxHeight == "0px"){
+                    menuList.style.maxHeight = "300px";
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/c0509d4b7a.js" crossorigin="anonymous"></script>
     </body>
 
 </html>

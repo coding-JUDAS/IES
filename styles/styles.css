@@ -1,4 +1,10 @@
-html {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
     box-sizing: border-box;
   
     /* Set font size for easy rem calculations
@@ -7,8 +13,6 @@ html {
     */
     font-size: 62.5%;
     scroll-behavior: smooth;
-  }
-  body {
     font-family: sans-serif;
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
@@ -16,6 +20,8 @@ html {
     background-color: #000;
     color: antiquewhite;
     padding: 2rem;
+    height: 100vh;
+    width: 100vw;
   }
   h1,h2 {
   font-family: sans-serif;
@@ -24,11 +30,11 @@ html {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -45,12 +51,14 @@ img {
   width: 100%;
 }
 .navbar {
+    padding: 10px 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 70px;
     background: #000;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
@@ -61,13 +69,67 @@ img {
     display: flex;
     margin-right: 2rem;
   }
+  .nav-list li{
+    list-style-type: none;
+  }
   .nav-list a {
     display: block;
-    font-size: 2.2rem;
-    padding: 2rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    color: #ffffff;
   }
   
   .nav-list a:hover {
+    background: #ffffff;
+    color: #000;
+  }
+  .logo{
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  .menu-icon i{
+    color: #ffffff;
+    size: 30px;
+    display: none;
+  }
+  @media (max-width:750px){
+
+    .nav-list{
+      position:absolute;
+      padding: 0.2rem;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+      overflow:scroll;
+      background: #000;
+      transition: all 0.4s;
+      scroll-behavior: smooth;
+      scrollbar-width:none;
+    }
+    .nav-list li{
+      padding: 0.2rem;
+      
+    }
+    .menu-icon i{
+      display: block;
+    }
+    .introduction-section{
+      font-size: 1.2rem;
+    }
+    .services-section {
+      margin-top: 2rem;
+      padding: 2rem 1rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 2fr;
+    }
+  }
+  .menu-icon a:hover{
     background: #ffffff;
     color: #000;
   }
@@ -112,16 +174,7 @@ img {
     margin: 0 auto;
     margin-bottom: 6rem;
   }
-  
-  @media (max-width: 30.625em) {
-    .services-section {
-      padding: 6rem 1rem;
-    }
-  
-    .services-grid {
-      grid-template-columns: 2fr;
-    }
-  }
+
   
   .services {
     background: #000;
