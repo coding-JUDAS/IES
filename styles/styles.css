@@ -119,6 +119,8 @@ img {
     }
     .introduction-section{
       font-size: 0.8rem;
+      height: fit-content;
+      width: fit-content;
     }
     .services-section {
       margin-top: 2rem;
